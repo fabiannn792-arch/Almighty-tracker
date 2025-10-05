@@ -1,0 +1,25 @@
+name: Almighty Tracker
+on:
+  schedule:
+    - cron: "*/30 * * * *"  # cada 30 minutos
+  workflow_dispatch:
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - name: Install dependencies
+        run: pip install google-api-python-client spotipy requests
+      - name: Run bot
+        run: python bot.py
+        env:
+          DISCORD_WEBHOOK: ${{ https://discord.com/api/webhooks/1424431655304560700/QABQzoYsrmJ2qkNiKDeBsSj9Ry82Vkq--UOZasPK3uPR9_fvP49mLOdM5FBo09eYPm5C }}
+          YOUTUBE_API_KEY: ${{ AIzaSyBOGQN8Ljjb0SoSxTbyNhGNPQOPtQ9zdSE }}
+          SPOTIFY_CLIENT_ID: ${{ 59f397eed5ab405a90dc276330262223 }}
+          SPOTIFY_CLIENT_SECRET: ${{ 2de2e956e20a43d790b6510fdd37b2ff }}
