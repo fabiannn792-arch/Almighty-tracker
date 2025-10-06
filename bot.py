@@ -9,14 +9,14 @@ import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 
 # --- Variables desde Secrets (GitHub Actions) ---
-DISCORD_WEBHOOK = os.getenv(https://discord.com/api/webhooks/1424431655304560700/QABQzoYsrmJ2qkNiKDeBsSj9Ry82Vkq--UOZasPK3uPR9_fvP49mLOdM5FBo09eYPm5C)
-YOUTUBE_API_KEY = os.getenv(AIzaSyBOGQN8Ljjb0SoSxTbyNhGNPQOPtQ9zdSE)
-SPOTIFY_CLIENT_ID = os.getenv(59f397eed5ab405a90dc276330262223)
-SPOTIFY_CLIENT_SECRET = os.getenv(2de2e956e20a43d790b6510fdd37b2ff)
-YOUTUBE_CHANNEL_ID = os.getenv(UCxg9gU5cLuRkZ9a5VJYbSRA)       # debes poner el ID del canal de Almighty
-SPOTIFY_ARTIST_ID = os.getenv(6P6GTRTigHBp8ZesNtpCKH?si=VhlJevaiSwSXCnHHy1-TXw)         # debes poner el artist id de Spotify
-GITHUB_TOKEN = os.getenv(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)
-GITHUB_REPOSITORY = os.getenv(fabiannn792-arch/almighty-tracker)         # p. ej. "tuUsuario/almighty-tracker"
+DISCORD_WEBHOOK = os.getenvhttps://discord.com/api/webhooks/1424431655304560700/QABQzoYsrmJ2qkNiKDeBsSj9Ry82Vkq--UOZasPK3uPR9_fvP49mLOdM5FBo09eYPm5C
+YOUTUBE_API_KEY = os.getenvAIzaSyBOGQN8Ljjb0SoSxTbyNhGNPQOPtQ9zdSE
+SPOTIFY_CLIENT_ID = os.getenv59f397eed5ab405a90dc276330262223
+SPOTIFY_CLIENT_SECRET = os.getenv2de2e956e20a43d790b6510fdd37b2ff
+YOUTUBE_CHANNEL_ID = os.getenvUCxg9gU5cLuRkZ9a5VJYbSRA       # debes poner el ID del canal de Almighty
+SPOTIFY_ARTIST_ID = os.getenv6P6GTRTigHBp8ZesNtpCKH?si=VhlJevaiSwSXCnHHy1-TXw         # debes poner el artist id de Spotify
+GITHUB_TOKEN = os.getenv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
+GITHUB_REPOSITORY = os.getenvfabiannn792-arch/almighty-tracker         # p. ej. "tuUsuario/almighty-tracker"
 
 DATA_FILE = "data.json"
 
