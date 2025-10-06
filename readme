@@ -1,0 +1,16 @@
+# 🔔 Almighty Tracker
+
+Bot que avisa por Discord cuando un tema de Almighty sube +1,000,000 reproducciones (YouTube) o +1,000,000 streams estimados (Spotify).
+
+## Pasos resumidos
+1. Crear este repo en tu cuenta (o forkear el que te compartan).
+2. Crear los archivos `bot.py`, `.github/workflows/notify.yml`, `requirements.txt` y `README.md`.
+3. En Settings -> Secrets and variables -> Actions:
+   - Crear secretos:
+     - DISCORD_WEBHOOK
+     - YOUTUBE_API_KEY
+     - SPOTIFY_CLIENT_ID
+     - SPOTIFY_CLIENT_SECRET
+     - YOUTUBE_CHANNEL_ID
+     - SPOTIFY_ARTIST_ID
+4. Ir a Actions -> seleccionar "Almighty Tracker" -> Run workflow (para probar manualmente).
